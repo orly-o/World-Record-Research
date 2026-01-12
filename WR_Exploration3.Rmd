@@ -309,7 +309,7 @@ fly100 = plot_ly(
 ) %>%
   layout(
     title = list(
-      text = "Women's 100 Butterfly WR Progression: Mary T. Meagher",
+      text = "Women's 100 Fly WR Progression: Mary T. Meagher",
       font = list(
         size = 24
       ),
@@ -520,7 +520,7 @@ free50 = plot_ly(
     ),
     yaxis = list(
       title = list(
-        text = "Time (mm:ss)",
+        text = "Time (ss)",
         font = list(
           size = 20
         )
