@@ -536,3 +536,67 @@ free50
 ```
 
 
+
+```{r}
+# # subset of data for just W 100 Fly
+# wr_W100Fly = wr[(wr$Event == "100 Butterfly" & wr$Sex == "F"),]
+# 
+# # change color for Mary
+# marker_colors_100Fly = ifelse(wr_W100Fly$Name == "Mary T. Meagher", "red", "gray")
+# marker_size_100Fly = ifelse(wr_W100Fly$Name == "Mary T. Meagher", 30, 10)
+# 
+# # create the ticks
+# y_breaks_100Fly = seq(floor(min(wr_W100Fly$Time)), ceiling(max(wr_W100Fly$Time)), by = 2)
+# y_labels_100Fly = format_swim(y_breaks_100Fly)
+# 
+# # plot
+# fly100 = plot_ly(
+#   data = wr_W100Fly,
+#   x = ~Date2,
+#   y = ~Time,
+#   type = 'scatter',
+#   mode = 'markers+lines',
+#   marker = list(
+#     size = marker_size_100Fly,
+#     color = marker_colors_100Fly
+#   ),
+#   line = list(
+#     color = 'gray'
+#   )
+# ) %>%
+#   layout(
+#     title = list(
+#       text = "Women's 100 Butterfly WR Progression: Mary T. Meagher",
+#       font = list(
+#         size = 24
+#       ),
+#       y = .98
+#     ),
+#     xaxis = list(
+#       title = list(
+#         text = "Date",
+#         font = list(
+#           size = 20
+#         )
+#       ),
+#       tickfont = list(
+#         size = 15
+#       )
+#     ),
+#     yaxis = list(
+#       title = list(
+#         text = "Time (mm:ss)",
+#         font = list(
+#           size = 20
+#         )
+#       ),
+#       tickfont = list(
+#         size = 15
+#       ),
+#       tickvals = y_breaks_100Fly,
+#       ticktext = y_labels_100Fly
+#     )
+#   )
+# fly100
+
+```
